@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!--navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">JDBC TRMS</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link loader" href="login.html" id="login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="account.html" id="account">Account</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Home Carousel-->
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://live.staticflickr.com/2900/13905987989_4d0401eb9f_b.jpg"
+            class="d-block w-100 car-img carImg"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://live.staticflickr.com/2851/13337826563_04ab34c986_b.jpg"
+            class="d-block w-100 car-img carImg"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://live.staticflickr.com/8620/15439189793_23a71dbf43_b.jpg"
+            class="d-block w-100 car-img carImg"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://cdn.pixabay.com/photo/2017/10/21/12/36/training-2874597_960_720.jpg"
+            class="d-block w-100 car-img carImg"
+            alt="..."
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!--Title -->
+    <div class="container">
+      <div class="row">
+        <div class="col my-3">
+          <h2 class="text-dark d-flex justify-content-center">
+            JDBC Tutiton Reimbursement System
+          </h2>
+        </div>
+      </div>
+    </div>
+    <!--List Group-->
+    <div class="container">
+      <div class="row p-2 m-4 border rounded">
+        <div class="col-4">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a
+              class="list-group-item list-group-item-action active"
+              id="list-university-list"
+              data-toggle="list"
+              href="#list-university"
+              role="tab"
+              aria-controls="university"
+              >University Course</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-cert-list"
+              data-toggle="list"
+              href="#list-cert"
+              role="tab"
+              aria-controls="cert"
+              >Certification</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-certTrain-list"
+              data-toggle="list"
+              href="#list-certTrain"
+              role="tab"
+              aria-controls="certTrain"
+              >Certification Training</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-techTrain-list"
+              data-toggle="list"
+              href="#list-techTrain"
+              role="tab"
+              aria-controls="techTrain"
+              >Technical Training</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-seminar-list"
+              data-toggle="list"
+              href="#list-seminar"
+              role="tab"
+              aria-controls="seminar"
+              >Seminar</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-other-list"
+              data-toggle="list"
+              href="#list-other"
+              role="tab"
+              aria-controls="other"
+              >Other</a
+            >
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="list-university"
+              role="tabpanel"
+              aria-labelledby="list-university-list"
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non
+              blanditiis eveniet eius aliquam tempore velit laudantium corrupti
+              assumenda voluptate a molestiae natus at, dolore nisi rem, dolorum
+              tenetur. Alias, laborum!
+            </div>
+            <div
+              class="tab-pane fade"
+              id="list-cert"
+              role="tabpanel"
+              aria-labelledby="list-cert-list"
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non
+              blanditiis eveniet eius aliquam tempore velit laudantium corrupti
+              assumenda voluptate a molestiae natus at, dolore nisi rem, dolorum
+              tenetur. Alias, laborum!
+            </div>
+            <div
+              class="tab-pane fade"
+              id="list-certTrain"
+              role="tabpanel"
+              aria-labelledby="list-certTrain-list"
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non
+              blanditiis eveniet eius aliquam tempore velit laudantium corrupti
+              assumenda voluptate a molestiae natus at, dolore nisi rem, dolorum
+              tenetur. Alias, laborum!
+            </div>
+            <div
+              class="tab-pane fade"
+              id="list-techTrain"
+              role="tabpanel"
+              aria-labelledby="list-techTrain-list"
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non
+              blanditiis eveniet eius aliquam tempore velit laudantium corrupti
+              assumenda voluptate a molestiae natus at, dolore nisi rem, dolorum
+              tenetur. Alias, laborum!
+            </div>
+            <div
+              class="tab-pane fade"
+              id="list-seminar"
+              role="tabpanel"
+              aria-labelledby="list-seminar-list"
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non
+              blanditiis eveniet eius aliquam tempore velit laudantium corrupti
+              assumenda voluptate a molestiae natus at, dolore nisi rem, dolorum
+              tenetur. Alias, laborum!
+            </div>
+            <div
+              class="tab-pane fade show active"
+              id="list-other"
+              role="tabpanel"
+              aria-labelledby="list-other-list"
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non
+              blanditiis eveniet eius aliquam tempore velit laudantium corrupti
+              assumenda voluptate a molestiae natus at, dolore nisi rem, dolorum
+              tenetur. Alias, laborum!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="loginbutton.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

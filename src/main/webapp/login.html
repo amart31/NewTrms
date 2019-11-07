@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Log In Page</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+
+  <body>
+    <!--navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">JDBC TRMS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+    <div class="container mt-2">
+      <h2 class="text-dark d-flex justify-content-center">Log In</h2>
+ 
+    </div>
+    <div class="container">
+        <!--Login Form -->
+      <div class="container form-cont d-flex justify-content-center">
+            <div class="row">
+              <div class="col  border rounded">
+                <form class="login-form my-4" 
+                enctype="application/json"
+                action="login"
+                method="POST"
+                id="loginForm">
+                  <div class="form-group">
+                    <label for="employeeIdInput">Username</label>
+                    <input
+            type="text"
+            class="form-control"
+            id="username"
+            placeholder="Your username"
+            aria-describedby="employeeUsernameHelp"
+            name="username"
+          />
+
+                    <small id="employeeUsernameHelp" class="form-text text-muted"
+                      >Your Employee username</small
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="inputPassword">Password</label>
+                    <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="password"
+            name="password"
+          />
+ 
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="employeeRadioBtn" name="employeeRadioBtn" class="custom-control-input">
+                      <label class="custom-control-label" for="employeeRadioBtn">Employee</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="supervisorRadioBtn" name="supervisorRadioBtn" class="custom-control-input">
+                      <label class="custom-control-label" for="supervisorRadioBtn">Supervisor</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="deptHeadRadioBtn" name="deptHeadRadioBtn" class="custom-control-input">
+                        <label class="custom-control-label" for="deptHeadRadioBtn">Department Head</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="benefitsCordRadioBtn" name="benefitsCordRadioBtn" class="custom-control-input">
+                        <label class="custom-control-label" for="benefitsCordRadioBtn">Benefits Cordinator</label>
+                      </div>
+                      <input class="btn btn-primary mt-2" type="submit" id="LoginFormSubmit" value="Log In">
+                    
+                  
+                </form>
+              </div>
+            </div>
+          </div>
+      
+    
+    </div>
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="login.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
